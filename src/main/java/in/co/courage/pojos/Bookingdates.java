@@ -1,9 +1,9 @@
-package in.co.courage.ex10_PayloadManagement.gson;
+package in.co.courage.pojos;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class BookingDates {
+public class Bookingdates {
 
     @SerializedName("checkin")
     @Expose

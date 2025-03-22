@@ -1,4 +1,4 @@
-package in.co.courage.ex10_PayloadManagement.gson;
+package in.co.courage.pojos;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -17,9 +17,9 @@ public class Booking {
     @SerializedName("depositpaid")
     @Expose
     private Boolean depositpaid;
-    @SerializedName("bookingDates")
+    @SerializedName("bookingdates")
     @Expose
-    private BookingDates bookingDates;
+    private Bookingdates bookingdates;
     @SerializedName("additionalneeds")
     @Expose
     private String additionalneeds;
@@ -56,12 +56,12 @@ public class Booking {
         this.depositpaid = depositpaid;
     }
 
-    public BookingDates getBookingdates() {
-        return bookingDates;
+    public Bookingdates getBookingdates() {
+        return bookingdates;
     }
 
-    public void setBookingdates(BookingDates bookingdates) {
-        this.bookingDates = bookingdates;
+    public void setBookingdates(Bookingdates bookingdates) {
+        this.bookingdates = bookingdates;
     }
 
     public String getAdditionalneeds() {
