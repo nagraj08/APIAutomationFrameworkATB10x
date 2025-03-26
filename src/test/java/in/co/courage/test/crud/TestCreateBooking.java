@@ -28,7 +28,7 @@ public class TestCreateBooking extends BaseTest {
                 .when().body(payloadManager.createPayloadBookingAsString())
                 .post();
         validatableResponse = response.then().log().all();
-        validatableResponse.statusCode(200);
+        validatableResponse.statusCode(201);
         BookingResponse bookingResponse = payloadManager.bookingResponseJava(response.asString());
         assertActions.verifyStringKey(bookingResponse.getBooking().getFirstname(), "Nagraj");
         assertActions.verifyStringKeyNotNull(bookingResponse.getBookingid());
