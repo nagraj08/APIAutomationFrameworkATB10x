@@ -130,7 +130,7 @@ public class TestE2EFlow_01 extends BaseTest {
         requestSpecification.basePath(basePathDELETE).cookie("token", token);
         validatableResponse = RestAssured.given().spec(requestSpecification)
                 .when().delete().then().log().all();
-        validatableResponse.statusCode(201);
+        validatableResponse.statusCode(200);
 
 
     }
